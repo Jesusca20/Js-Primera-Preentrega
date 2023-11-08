@@ -1,5 +1,13 @@
 // alert()
 
+
+const recargarBtn = document.getElementById("recargarBtn");
+
+recargarBtn.addEventListener("click", function() {
+
+    location.reload();
+});
+
 const MIN_POWER = 10;
 const MAX_POWER = 30;
 
@@ -26,7 +34,7 @@ if(golpeIronman === golpeThanos){
 }else if(golpeThanos > golpeIronman){
     // energiaIronman = energiaIronman - golpeThanos
     energiaIronman -= golpeThanos
-    document.write("<img src='img/thanosgolpeaaironman.jpg' width= '60%' height= '500px'/>")
+    document.write("<img src='img/thanosgolpeaaironman.jpg' width= '60%' height= ''/>")
 }else {
     // energiaThanos = energiaThanos - golpeIronman
     energiaThanos -= golpeIronman;
